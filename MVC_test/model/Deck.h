@@ -19,21 +19,23 @@ public:
     Deck() {}
     Deck(int number) {
         this->SetNum(number);
+        createCards(1);
     }
     // Getter
     int Number(){
         return this->number;
     }
-    
+
     // Setter
     void SetNum(const int &number) {
         this->number = number;
         std::cout << "Setting : " << this->number << endl;
     }
-    
+   
     void createCards(int number) {
         Card newCard(number, "SS");
         this->cardList.push_back(newCard);
+        std::cout << "Card Generated!: " << newCard.Rank() << ", " <<  newCard.Suit() << endl;
     }
 private:
     int number;
