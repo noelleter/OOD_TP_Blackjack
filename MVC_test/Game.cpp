@@ -87,13 +87,22 @@ public:
         cout << "! 게임 참여자 설정이 완료되었습니다." << endl << endl;
         cout << "! 베팅을 시작합니다." << endl;
         for (it=playerList.begin(); it!=playerList.end(); ++it){
-            cout << "!! '" << it->first << "'의 베팅 금액을 입력하세요: ";
+            pyrName = it->first;
+            cout << "!! '" << pyrName << "'의 베팅 금액을 입력하세요: ";
             cin >> betMoney;
             player = playerList[it->first];
             player.placeBet(betMoney);
         }
         cout << endl;
-        Evaluator evaluator = *new Evaluator(this->playerList);
-        evaluator.start();
+        
+        Player player2 = *new Player(10000, *new Hand(deck));
+        player2.hitCard();
+        player2.hitCard();
+        
+        Player player3 = *new Player(10000, *new Hand(deck));
+        player3.hitCard();
+        player3.hitCard();
+        // Evaluator evaluator = *new Evaluator(this->playerList);
+        // evaluator.start();
     }
 };

@@ -32,6 +32,7 @@ public:
         // cout << "----------------Test-----------------" <<endl;
     }
     
+    
     // Getter
     void getHandSize() {
         cout << this->handList.size() << endl;

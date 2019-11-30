@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVC_test/main.cpp"
-            timestampString = "596795019.817639"
+            timestampString = "596799404.438152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
@@ -26,7 +26,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MVC_test/main.cpp"
-            timestampString = "596795019.817747"
+            timestampString = "596799404.438321"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "main()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVC_test/main.cpp"
+            timestampString = "596799404.438445"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
@@ -41,28 +57,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVC_test/main.cpp"
-            timestampString = "596795019.817808"
+            filePath = "MVC_test/Evaluator.cpp"
+            timestampString = "596799404.43856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "main()"
-            landmarkType = "9">
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MVC_test/Evaluator.cpp"
-            timestampString = "596795019.81787"
+            filePath = "MVC_test/main.cpp"
+            timestampString = "596799404.438653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "9"
-            endingLineNumber = "9"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>

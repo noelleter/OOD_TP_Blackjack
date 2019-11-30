@@ -7,9 +7,10 @@
 //
 
 #include <iostream>
+#include <list>
 
 // #include "Model.h"
-#include "View.h"
+
 
 // #include "Controller.h"
 
@@ -36,37 +37,18 @@ int main() {
     model.SetData("Changes");
     */
     
-    cout << "----------------Test 1-----------------" <<endl;
+    
     Deck deck = *new Deck(3);
-    View view = *new View(deck);
-    view.genDeck();
     Hand hand = *new Hand(deck);
     
-    cout << "----------------Test 2-----------------" <<endl;
+    cout << "----------------Test 1-----------------" <<endl;
     Player player = *new Player(3000, hand);
     player.hitCard();
     player.hitCard();
-    player.hitCard();
-    player.hitCard();
     
     Game game = *new Game(deck);
     
-    /*
-    cout << "----------------Test 3-----------------" <<endl;
-    Game game = *new Game(deck);
-    
-    game.getNumOfPlayerList();
-    game.addPlayer("NOEUN", 3000);
-    
-    
-    game.getNumOfPlayerList();
-    game.addPlayer("NAEUN", 3000);
-    
-    game.getNumOfPlayerList();
-    game.addPlayer("NOEUN", 3000);
-    game.placeBet("NOEUN", 1000);
-    */
-    cout << "----------------Test 4-----------------" <<endl;
+    cout << "----------------Test 2-----------------" <<endl;
     game.start();
     return 0;
 }
