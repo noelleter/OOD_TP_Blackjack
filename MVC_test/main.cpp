@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+
 #include "Model.h"
 #include "Deck.h"
 #include "Card.h"
@@ -22,6 +23,7 @@ int main() {
     Model model("Model");
     Card card(14, "MODEL");
     Deck deck(1);
+    deck.drawCard();
     View view(model);
     // register the data-change event
     model.RegisterDataChangeHandler(&DataChange);
