@@ -27,10 +27,7 @@
 /* Begin PBXFileReference section */
 		93A3592E2390F61C0019BE45 /* MVC_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MVC_test; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A359312390F61C0019BE45 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		93A359422391092D0019BE45 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		93A35943239109F70019BE45 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		93A3594423910A190019BE45 /* View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
-		93A3594523910A3B0019BE45 /* Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		93A3594823910C0F0019BE45 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		93A3594B239114CC0019BE45 /* Suit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Suit.h; sourceTree = "<group>"; };
 		93A3594C23911A2D0019BE45 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
@@ -74,12 +71,9 @@
 				93A3595323923A690019BE45 /* Controller */,
 				93A359502392372F0019BE45 /* View */,
 				93A3594723910BAF0019BE45 /* model */,
-				93A359422391092D0019BE45 /* Model.h */,
 				93A35943239109F70019BE45 /* Common.h */,
 				93A359312390F61C0019BE45 /* main.cpp */,
 				93A3595423923A880019BE45 /* Game.cpp */,
-				93A3594423910A190019BE45 /* View.h */,
-				93A3594523910A3B0019BE45 /* Controller.h */,
 				93A3595823924DE30019BE45 /* Evaluator.cpp */,
 			);
 			path = MVC_test;
