@@ -9,6 +9,14 @@
 #ifndef Suit_h
 #define Suit_h
 
-enum Suit {SPADES, HEARTS, CLUBS, DIAMONDS};
-
+namespace CardGame_Scoped
+{
+    enum class Suit { Diamonds, Hearts, Clubs, Spades };
+    /*
+    void PlayCard(Suit suit)
+    {
+     if (suit == Suit::Clubs) // Enumerator must be qualified by enum type{}
+    }
+    */
+}
 #endif /* Suit_h */

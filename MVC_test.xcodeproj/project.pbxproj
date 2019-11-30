@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93A359322390F61C0019BE45 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93A359312390F61C0019BE45 /* main.cpp */; };
+		93A3595523923A880019BE45 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93A3595423923A880019BE45 /* Game.cpp */; };
+		93A3595923924DE30019BE45 /* Evaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93A3595823924DE30019BE45 /* Evaluator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,11 @@
 		93A3594823910C0F0019BE45 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		93A3594B239114CC0019BE45 /* Suit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Suit.h; sourceTree = "<group>"; };
 		93A3594C23911A2D0019BE45 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		93A3595423923A880019BE45 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		93A3595623923B390019BE45 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		93A3595723923B630019BE45 /* Hand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		93A3595823924DE30019BE45 /* Evaluator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Evaluator.cpp; sourceTree = "<group>"; };
+		93A3595A239253520019BE45 /* Dealer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dealer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +71,16 @@
 		93A359302390F61C0019BE45 /* MVC_test */ = {
 			isa = PBXGroup;
 			children = (
+				93A3595323923A690019BE45 /* Controller */,
+				93A359502392372F0019BE45 /* View */,
 				93A3594723910BAF0019BE45 /* model */,
 				93A359422391092D0019BE45 /* Model.h */,
 				93A35943239109F70019BE45 /* Common.h */,
 				93A359312390F61C0019BE45 /* main.cpp */,
+				93A3595423923A880019BE45 /* Game.cpp */,
 				93A3594423910A190019BE45 /* View.h */,
 				93A3594523910A3B0019BE45 /* Controller.h */,
+				93A3595823924DE30019BE45 /* Evaluator.cpp */,
 			);
 			path = MVC_test;
 			sourceTree = "<group>";
@@ -80,8 +91,25 @@
 				93A3594823910C0F0019BE45 /* Card.h */,
 				93A3594B239114CC0019BE45 /* Suit.h */,
 				93A3594C23911A2D0019BE45 /* Deck.h */,
+				93A3595623923B390019BE45 /* Player.h */,
+				93A3595723923B630019BE45 /* Hand.h */,
+				93A3595A239253520019BE45 /* Dealer.h */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		93A359502392372F0019BE45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93A3595323923A690019BE45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A359322390F61C0019BE45 /* main.cpp in Sources */,
+				93A3595923924DE30019BE45 /* Evaluator.cpp in Sources */,
+				93A3595523923A880019BE45 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

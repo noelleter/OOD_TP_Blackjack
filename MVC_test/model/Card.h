@@ -9,6 +9,7 @@
 #ifndef Card_h
 #define Card_h
 #include "Common.h"
+#include<iostream>
 
 class Card{
 public:

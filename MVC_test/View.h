@@ -12,12 +12,19 @@
 #include <stdio.h>
 #include <iostream>
 #include "model.h"
+#include "Deck.h"
+
 #pragma once
-// View is responsible to present data to users
+
+using namespace std;
+
 class View {
 public:
     View(const Model &model) {
         this->model = model;
+    }
+    View(const Deck &deck) {
+        this->deck = deck;
     }
     View() {}
     void SetModel(const Model &model) {
@@ -26,7 +33,11 @@ public:
     void Render() {
         std::cout << "Model Data = " << model.Data() << endl;
     }
+    void genDeck() {
+        cout << "! Deck Generated: " << this->deck.Number() << " deck, " << this->deck.getTotalCard() << " cards" << endl;
+    }
 private:
     Model model;
+    Deck deck;
 };
 #endif /* View_h */

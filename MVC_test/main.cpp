@@ -8,11 +8,18 @@
 
 #include <iostream>
 
-#include "Model.h"
+// #include "Model.h"
+#include "View.h"
+
+// #include "Controller.h"
+
+#include "Game.cpp"
 #include "Deck.h"
 #include "Card.h"
-#include "View.h"
-#include "Controller.h"
+#include "Hand.h"
+#include "Player.h"
+#include "Dealer.h"
+
 
 using namespace std;
 void DataChange(string data) {
@@ -20,18 +27,46 @@ void DataChange(string data) {
 }
 
 int main() {
+    /*
     Model model("Model");
-    Card card(14, "MODEL");
-    Deck deck(1);
-    deck.drawCard();
     View view(model);
-    // register the data-change event
     model.RegisterDataChangeHandler(&DataChange);
-    
-    // binds model and view.
     Controller controller(model, view);
-    // when application starts or button is clicked or form is shown...
     controller.OnLoad();
-    model.SetData("Changes"); // this should trigger View to render
+    model.SetData("Changes");
+    */
+    
+    cout << "----------------Test 1-----------------" <<endl;
+    Deck deck = *new Deck(3);
+    View view = *new View(deck);
+    view.genDeck();
+    Hand hand = *new Hand(deck);
+    
+    cout << "----------------Test 2-----------------" <<endl;
+    Player player = *new Player(3000, hand);
+    player.hitCard();
+    player.hitCard();
+    player.hitCard();
+    player.hitCard();
+    
+    Game game = *new Game(deck);
+    
+    /*
+    cout << "----------------Test 3-----------------" <<endl;
+    Game game = *new Game(deck);
+    
+    game.getNumOfPlayerList();
+    game.addPlayer("NOEUN", 3000);
+    
+    
+    game.getNumOfPlayerList();
+    game.addPlayer("NAEUN", 3000);
+    
+    game.getNumOfPlayerList();
+    game.addPlayer("NOEUN", 3000);
+    game.placeBet("NOEUN", 1000);
+    */
+    cout << "----------------Test 4-----------------" <<endl;
+    game.start();
     return 0;
 }
