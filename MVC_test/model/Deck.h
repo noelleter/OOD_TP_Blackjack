@@ -49,7 +49,7 @@ public:
     }
     
     // Setter
-    void SetNum(const int &number) {
+    void SetNum(int number) {
         this->number = number;
     }
     void SetList(list<Card> &newList) {
@@ -81,24 +81,7 @@ public:
         std::cout << "Draw Card: " << popCard.Rank() << ", " << popCard.Suit() << std::endl;
         return popCard;
     }
-    /*
-    void showList() {
-        Card popCard;
-        if (cardList.size() == 0) {
-            //throw new NoMoreCardException();
-            std::cout << "Empty Deck! " << endl;
-        }
-        else{
-            // std::cout << "Remained Size : " << cardList.size() << std::endl;
-            for(int i = 0; i < 13; i++){
-                std::cout << cardList.size() << ": ";
-                popCard = cardList.back();
-                cardList.pop_back();
-                std::cout << i << ": " << popCard.Rank() << ", " << popCard.Suit() << std::endl;
-            }
-        }
-    }
-    */
+    
     void createCards(int number) {
         string suit;
         for (int j = 0; j < number; j++) {
@@ -126,6 +109,5 @@ public:
         }
         shuffle(this->cardList);
     }
-
 };
 #endif /* Deck_h */

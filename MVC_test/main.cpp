@@ -38,15 +38,15 @@ int main() {
     */
     
     
-    Deck deck = *new Deck(3);
-    Hand hand = *new Hand(deck);
+    Deck* deck = new Deck(3);
+    Hand* hand = new Hand(*deck);
     
     cout << "----------------Test 1-----------------" <<endl;
-    Player player = *new Player(3000, hand);
+    Player player = *new Player(3000, *hand);
     player.hitCard();
     player.hitCard();
     
-    Game game = *new Game(deck);
+    Game game = *new Game(*deck);
     
     cout << "----------------Test 2-----------------" <<endl;
     game.start();

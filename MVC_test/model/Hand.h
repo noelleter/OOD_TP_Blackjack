@@ -21,15 +21,14 @@ using namespace std;
 class Hand {
 private:
     list<Card> handList;
-    Deck deck;
+    Deck* deck;
     
 public:
     // 생성자
     // Hand(){}
     Hand(){}
     Hand(Deck &newDeck){
-        deck = newDeck;
-        // cout << "----------------Test-----------------" <<endl;
+        deck = &newDeck;
     }
     
     
@@ -48,15 +47,11 @@ public:
         return card;
     }
     Card drawCard() {
-        Card card = this->deck.drawCard();
+        Card card = deck->drawCard();
 
-        deck.getTotalCard();
+        deck->getTotalCard();
         this->handList.push_back(card);
         return card;
     }
-    /*
-    list<Card> getCardList() {
-        return this->cardList;
-    }*/
 };
 #endif
