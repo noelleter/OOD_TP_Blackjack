@@ -26,8 +26,8 @@ public:
     }
     
     // Getter
-    Hand getHand(){
-        return this->hand;
+    Hand* getHand(){
+        return &hand;
     }
     int Balance(){
         return this->balance;

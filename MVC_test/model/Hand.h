@@ -31,13 +31,12 @@ public:
         deck = &newDeck;
     }
     
-    
     // Getter
     void getHandSize() {
         cout << this->handList.size() << endl;
     }
-    list<Card> getHandList() {
-        return this->handList;
+    list<Card>* getHandList() {
+        return &(this->handList);
     }
     
     // 공개 함수

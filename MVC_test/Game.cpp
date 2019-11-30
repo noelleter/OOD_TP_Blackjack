@@ -95,14 +95,7 @@ public:
         }
         cout << endl;
         
-        Player player2 = *new Player(10000, *new Hand(deck));
-        player2.hitCard();
-        player2.hitCard();
-        
-        Player player3 = *new Player(10000, *new Hand(deck));
-        player3.hitCard();
-        player3.hitCard();
-        // Evaluator evaluator = *new Evaluator(this->playerList);
-        // evaluator.start();
+        Evaluator evaluator = *new Evaluator(this->playerList);
+        evaluator.start();
     }
 };
